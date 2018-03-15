@@ -1,0 +1,14 @@
+<!--pages/house_estimate_history/history.wxml-->
+<view class="background"></view>
+<view class="header-wrap">
+  <view class="header">历史清单</view>
+</view>
+<block wx:for="{{searchHistory}}" wx:for-item="item">
+  <view data-searchresult="{{item.searchResult}}" data-totalprice="{{item.totalPrice}}" class="search-result history" bindtap="onHistoryTap">
+    <view class="search-info">
+      <view class="search-result-title">{{item.searchResult}}</view>
+      <view class="search-result-address">查询时间:{{item.log}}</view>
+    </view>
+    <view class="price">{{item.totalPrice}}万元</view>
+  </view>
+</block>

@@ -1,0 +1,19 @@
+<!--pages/house_search/search.wxml-->
+<view class="house-search">
+  <view class="searching-bar">
+    <view class="searching-bar-input">
+      <icon type="search" size="15" />
+      <input type="text" placeholder="请输入具体小区/楼/栋/门牌号" value="{{searchResult}}" bindinput="searhAddress" />
+      <icon type="clear" size="20" bindtap="clearInput" />
+    </view>
+    <text class="search-confirm" bindtap="completeInput">取消</text>
+  </view>
+  <block wx:for="{{searchResults}}" wx:key="title" wx:for-item="item">
+    <view class="search-result">
+      <view class="search-info" >
+        <view class="search-result-title" data-text="{{item.title}}" bindtap="tapOnSearchResult">{{item.title}}</view>
+        <view class="search-result-address">{{item.address}}</view>
+      </view>
+    </view>
+  </block>
+</view>

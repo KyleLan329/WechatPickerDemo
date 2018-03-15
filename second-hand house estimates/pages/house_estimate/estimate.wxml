@@ -1,0 +1,57 @@
+<!--pages/house_estimate/estimate.wxml-->
+<!--背景图-->
+<view class="background-image index">
+  <image src="../../images/index_bg.jpg"></image>
+</view>
+<view class="index-title">算算房产值多少！</view>
+<!--按钮操作框-->
+<view class="interactive-area">
+  <view class="ia-middle">
+    <!--地区选择框-->
+    <view class="input-box first-box" catchtap="open">
+      <view class="description">地区</view>
+      <view class="add-input active" bindtap="open">{{province}}-{{city}}-{{county}}</view>
+      <image src="../../images/index_location.jpg"></image>
+    </view>
+    <!--详细地址输入-->
+    <view class="input-box next-box" catchtap="onfocus">
+      <view class="description">详细地址</view>
+      <view class="add-input {{active? 'active':''}}">{{searchResult}}</view>
+    </view>
+    <!--房产面积-->
+    <view class="input-box next-box">
+      <view class="description">房产大小</view>
+      <input class="add-input {{houseArea? 'active':''}}" type="digit" placeholder-class="add-input" placeholder="请输入房产面积" value="{{houseArea}}" bindinput="areaInput"/>
+      <text class="sqaure-meter">m²</text>
+    </view>
+    <!--房产产值查询按钮-->
+    <view class="confirm-btn">
+      <button bindtap="getEstimateResult">查一查房产的产值是多少</button>
+    </view>
+  </view>
+</view>
+<!--搜索历史查询-->
+<view class="search-history">
+  <text bindtap="moveToHistory">历史清单查询</text>
+</view>
+
+<!--地区自定义picker-->
+<view class="citypicker" wx:if="{{condition}}">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="close" class="city-cancel">取消</view>
+      <view bindtap="close" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+

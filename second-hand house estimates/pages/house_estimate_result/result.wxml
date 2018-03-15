@@ -1,0 +1,24 @@
+<!--背景图片-->
+<view class="background-image">
+  <image src="../../images/result_bg.jpg"></image>
+</view>
+
+
+<view class="houseInfo">
+  <view class="title">房产总估值（万元）</view>
+  <view class="price">¥ {{totalPrice}}</view>
+  <image src="../../images/location.png"></image>
+  <view class="community">{{searchResult}}</view>
+  <view class="total-number">(此小区已有{{totalNumber}}人查询)</view>
+</view>
+
+<view class="confirm-btn re-estimate">
+  <button bindtap="reEstimate"> 再次估值</button>
+</view>
+
+<view class="customer-service">估值有问题？问问
+  <contact-button type="default-light" class="cs1-btn" size="25" session-from="weapp"></contact-button>
+  <contact-button type="default-light" class="cs2-btn" size="25" session-from="weapp"></contact-button>
+  <contact-button type="default-light" class="cs3-btn" size="25" session-from="weapp"></contact-button>
+  <text>房产估值MM</text>
+</view>

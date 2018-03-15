@@ -1,0 +1,51 @@
+/* pages/house_search/search.wxss */
+
+.house-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f5;
+  z-index: 90;
+}
+
+.searching-bar {
+  height: 90rpx;
+  background-color: #efeff4;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #d6d6db;
+}
+
+.searching-bar-input {
+  display: flex;
+  height: 80rpx;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  padding-right: 15rpx;
+}
+
+.searching-bar-input icon {
+  margin-left: 10rpx;
+}
+
+.searching-bar input {
+  width: 500rpx;
+  background-color: #fff;
+  border:none;
+  font-size: 34rpx;
+  padding-left: 30rpx;
+}
+
+.search-confirm {
+  margin: 0 auto;
+  color: #47b2ff;
+  font-size: 32rpx;
+}

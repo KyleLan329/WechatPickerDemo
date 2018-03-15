@@ -1,0 +1,38 @@
+/* pages/house_estimate_history/history.wxss */
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  background-color:#f0f0f5;
+  z-index: -1;
+}
+
+
+.header {
+  font-size:26rpx;
+  color: #a9a9a9;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  z-index: 10;
+}
+
+.header-wrap{
+  background-color: #fff;
+}
+
+.history{
+  position:relative;
+}
+.price{
+  position: absolute;
+  top: 55rpx;
+  right: 40rpx;
+  font-size: 40rpx;
+}
+
+
+

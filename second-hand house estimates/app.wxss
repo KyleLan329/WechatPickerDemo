@@ -1,0 +1,79 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+
+/*** 定义字体为黑体、微软雅黑、苹方 ***/
+
+page{
+  background-color: #f0f0f5;
+}
+
+view {
+  font-family:Helvetica, Tahoma, "黑体","Microsoft YaHei", "PingFang SC", sans-serif;
+}
+input{
+  font-family:Helvetica, Tahoma, "黑体","Microsoft YaHei", "PingFang SC", sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.background-image {
+  position: absolute;
+  top: -128rpx;
+  left: 0;
+  width: 750rpx;
+  height: 1334rpx;
+  z-index: -10;
+}
+
+.background-image image {
+  width: 750rpx;
+  height: 1344rpx;
+}
+
+.confirm-btn {
+  margin-top: 80rpx;
+  width: 572rpx;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15rpx;
+  box-shadow: 0 5rpx 10rpx #def1ff;
+}
+
+
+button{
+  color: #fff;
+  background-color: #47b2ff;
+}
+
+.search-result {
+  background-color: #fff;
+  height: 130rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top:32rpx;
+}
+
+.search-info{
+  margin-left: 30rpx;
+  padding-bottom:35rpx;
+  border-bottom: 1px solid #eee;
+}
+
+
+.search-result-title {
+  font-size: 34rpx;
+  line-height: 30px;
+}
+
+
+.search-result-address {
+  color: #bdbdbd;
+  font-size: 26rpx;
+}

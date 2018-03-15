@@ -1,0 +1,197 @@
+/* pages/house-estimate/estimate.wxss */
+
+
+
+.index-title {
+  position: absolute;
+  top: 180rpx;
+  left: 190rpx;
+  color: #fff;
+  font-weight: 500;
+  font-size: 48rpx;
+  font-family: "黑体";
+  text-shadow: 2rpx 2rpx 10rpx #000;
+}
+
+.interactive-area {
+  margin-top: 400rpx;
+  margin-left: 50rpx;
+  width: 650rpx;
+  height:710rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.ia-middle {
+  overflow: hidden;
+  height: 100%;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #999;
+  height: 80rpx;
+  width: 572rpx;
+  font-size: 32rpx;
+  margin-left: 40rpx;
+}
+
+
+
+.input-box image{
+  width: 32rpx;
+  height: 42rpx;
+  margin-bottom:10rpx;
+}
+
+.first-box{
+  margin-top: 80rpx;
+  z-index: 10;
+}
+
+.next-box {
+  margin-top: 60rpx;
+}
+
+.description {
+  width: 165rpx;
+  text-align: left;
+  line-height: 80rpx;
+}
+
+.add-input {
+  width: 355rpx;
+  color:#b2b2b2;
+  font-weight:600;
+  font-size: 31rpx;
+}
+
+.active{
+  color: #000;
+}
+
+.detailed-add {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #999;
+  height: 80rpx;
+}
+
+.house-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50rpx;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  height: 80rpx;
+}
+
+
+
+
+.search-history {
+  text-align: center;
+  margin-top: 8rpx;
+  font-size: 14px;
+}
+
+.search-history text {
+  color: #576b95;
+}
+
+.house-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f5;
+  z-index: 90;
+}
+
+.searching-bar {
+  height: 90rpx;
+  background-color: #efeff4;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #d6d6db;
+}
+
+.searching-bar-input {
+  display: flex;
+  height: 80rpx;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+  padding-right: 15rpx;
+}
+
+.searching-bar-input icon {
+  margin-left: 10rpx;
+}
+
+.searching-bar input {
+  width: 500rpx;
+  background-color: #fff;
+  border:none;
+  font-size: 34rpx;
+  padding-left: 30rpx;
+}
+
+.search-confirm {
+  margin: 0 auto;
+  color: #47b2ff;
+  font-size: 32rpx;
+}
+
+.citypickers {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citybody {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  z-index: 70;
+}
+
+.cityheader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2fb42e;
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+
+

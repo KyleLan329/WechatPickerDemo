@@ -1,0 +1,81 @@
+/* pages/house_estimate_result/result.wxss */
+
+.houseInfo {
+  height: 662rpx;
+  margin-bottom: 40rpx;
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.houseInfo image {
+  width: 30rpx;
+  height: 37rpx;
+  margin-bottom: 35rpx;
+}
+
+.title {
+  color: #a9a9a9;
+  font-size: 34rpx;
+  margin-bottom: 60rpx;
+}
+
+.price {
+  text-align: center;
+  color: #47b2ff;
+  font-size: 80rpx;
+  margin-bottom: 95rpx;
+}
+
+.community {
+  text-align: center;
+  color: #878787;
+  font-size: 34rpx;
+  margin-bottom: 45rpx;
+}
+
+.total-number {
+  font-size: 24rpx;
+  color: #b2b2b2;
+  text-align: center;
+}
+
+.re-estimate {
+  width: 630rpx;
+  margin-bottom: 35rpx;
+}
+
+.customer-service {
+  text-align: center;
+  font-size: 26rpx;
+  color: #a9a9a9;
+  position: relative;
+}
+
+.cs1-btn {
+  position: absolute;
+  top: 0;
+  left: 417rpx;
+  opacity: 0;
+}
+
+.cs2-btn{
+  position: absolute;
+  top: 0;
+  left: 470rpx;
+  opacity: 0;
+}
+
+.cs3-btn{
+  position: absolute;
+  top: 0;
+  left: 520rpx;
+  opacity: 0;
+}
+
+.customer-service text {
+  color: #576b95;
+  text-decoration: underline;
+}
