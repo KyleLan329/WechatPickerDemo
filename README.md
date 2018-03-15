@@ -1,0 +1,2 @@
+# WechatPickerDemo
+使用picker组件进行省市区联动，调用腾讯地图API进行定位和支持小区名字模糊查询的二手房估值demo
