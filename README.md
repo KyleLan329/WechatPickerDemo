@@ -9,6 +9,7 @@ git clone git@github.com:KyleLan329/WechatPickerDemo.git
 ```
 
 使用小程序开发工具打开,点击“小程序”,输入任意名称即可体验
+
 ![pic1](http://omwkr388t.bkt.clouddn.com/1.png)
 
 
